@@ -1,6 +1,9 @@
 from transformers import TrainingArguments
 import torch
-
+import torch.nn as nn
+import torch.nn.functional as F
+from transformers import Trainer
+from transformers import TextDataset, DataCollatorForLanguageModeling
 
 class KnowledgeDistillationTrainingArguments(TrainingArguments):         #Defining the parameters for training 
   def __init__(self, *args, alpha=0.5, temperature=2.0, **kwargs):
@@ -8,9 +11,7 @@ class KnowledgeDistillationTrainingArguments(TrainingArguments):         #Defini
     self.alpha=alpha
     self.temperature=temperature
 
-import torch.nn as nn
-import torch.nn.functional as F
-from transformers import Trainer
+
 
 class KnowledgeDistillationTrainer(Trainer):                            
 
@@ -32,7 +33,6 @@ class KnowledgeDistillationTrainer(Trainer):
    return  loss
 
 
-from transformers import TextDataset, DataCollatorForLanguageModeling
 def load_data(filepath,tokenizer,blocksize=128):                       #Loads textual dataset for training from a file in .txt extension
   dataset=TextDataset(
       tokenizer=tokenizer,
