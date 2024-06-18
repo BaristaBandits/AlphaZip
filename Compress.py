@@ -43,14 +43,15 @@ def run_test(model,tokenizer, test, sequence):
   #print(output_string.split('.').count('0'), len(right_ids))
   return output_string
 
-def read_pdf(path):                                          #This function can be used when compressing the PDF rather than a text file 
-  with open(path,"rb") as file:
+def read_pdf(path_PDF, path_text_file):                                          #This function can be used when compressing the PDF rather than a text file 
+  with open(path_PDF,"rb") as file:
     pdf_reader=PdfReader(file)
     text=""
     for i in range(len(pdf_reader.pages)):
       text+=pdf_reader.pages[i].extract_text()
     text=text.replace('\n',' ')
-    return text
+    with open(path_text_file, "w") as f:
+      f.write(text)
     
 def extensive_test(filename,model_path):
   global context_size
@@ -92,4 +93,7 @@ extensive_test('test.txt','gpt2')
 
 
 #Comments
-#For PDF files the read PDF function above can be used to extract the text to be compressed
+#For PDF files the read PDF function above can be used to extract the text to be compressed as shown below
+read_PDF('test.pdf', 'test.txt')
+extensive_test('test.txt', 'gpt2')
+
