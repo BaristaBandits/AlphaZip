@@ -30,7 +30,7 @@ def train(file_path, model_name, output_dir, overwrite_output_dir, per_device_tr
   trainer.train()
   trainer.save_model()
 
-file_path="inputnew.txt"
+file_path="input.txt"
 model_name="gpt2"
 output_dir="fine_tuning_weights"
 overwrite_output_dir=False
