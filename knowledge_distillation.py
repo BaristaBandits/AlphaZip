@@ -55,11 +55,12 @@ student_training_args=KnowledgeDistillationTrainingArguments(
     per_device_train_batch_size=batch_size,
     per_device_eval_batch_size=batch_size,
     alpha=1,
-    evaluation_strategy="no",                                           #Optional: Can give a dataset for evaluation in eval_dataset in Trainer, set eval_strategy="epoch" in that case
+    evaluation_strategy="no", #Optional: Can give a dataset for evaluation in eval_dataset in Trainer, set eval_strategy="epoch" in that case
+    save_steps=1000,
     weight_decay=0.01,)
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
-file_path="inputnew.txt"
+file_path="input.txt"
 tokenizer= AutoTokenizer.from_pretrained("gpt2")
 datacollator=DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 dataset=load_data(file_path, tokenizer)
