@@ -36,7 +36,7 @@ output_dir="fine_tuning_weights"
 overwrite_output_dir=False
 per_device_train_batch_size=1                                           #To keep the training environment same as that of knowledge distillation
 num_train_epochs=25
-save_steps=300
+save_steps=1000
 
 train(file_path=file_path,
       model_name=model_name,
