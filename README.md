@@ -7,9 +7,13 @@ Welcome to the Neural-Networks-Aided-Lossless-Text-Compression wiki!
 Requirements:
 
 NVIDIA GeForce RTX 4080
+
 Python 3.10.12
+
 Pytorch 2.2.2
+
 Tensorflow 2.11.0 (FOR XLA)
+
 Procedure:
 
 Install the requirements ensuring that there are no dependency conflicts
