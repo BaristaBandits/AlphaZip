@@ -21,10 +21,12 @@ Compress any text file you have by using the compress.py code
 Change the path variable to the required file's path
 For PDFs utilise the read_PDF function to first extract the text from PDF to a text file and then proceed to compress the text file as illustrated in the code
 For using the adaptive huffman method, you can copy paste the function or import the function as a user defined library
+
 Information about Hyperparameters:
 
 input_length: Refers to the number of ASCII characters from the input text that we would like to compress
 context_size: Refers to the number of characters that is used as a context for the transformer block to predict the next next token
+
 Domain Specific Compression:
 
 **Fine-tuning: **To fine tune the model you can use the fine_tuning.py code and insert a input file as 'input.txt' . You can test the compression performance from any checkpoint by using the compress.py code. Modify the code as follows.
