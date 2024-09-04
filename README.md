@@ -17,7 +17,7 @@ Tensorflow 2.11.0 (FOR XLA)
 
 Procedure:
 
-Install the requirements ensuring that there are no dependency conflicts
+Install the requirements using pip install -r requirements.txt
 Compress any text file you have by using the compress.py code
 Change the path variable to the required file's path
 For PDFs utilise the read_PDF function to first extract the text from PDF to a text file and then proceed to compress the text file as illustrated in the code
