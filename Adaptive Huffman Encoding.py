@@ -1,3 +1,14 @@
+"""
+Author: Swathi Shree Narashiman
+Credit: Ashwin/Adaptive_Huffman
+
+This script is capable of encoding and decoding text using the Adaptive Huffman technique.
+It builds a tree structure using the Class Node. 
+This code has adapted the version of adaptive huffman given by https://github.com/A-s-h-w-i-n/Adaptive_Huffman/blob/master/adaptive_huffman.py. 
+However it has been modified to add more functionalities.
+
+"""
+
 class Node:
   def __init__(self, tag , parent,lchild,rchild,weight):
     self.tag = tag
@@ -5,6 +16,7 @@ class Node:
     self.lchild = lchild
     self.rchild = rchild
     self.weight = weight
+
 def BinConvert(node):
     code=""
     while(node.parent!=None):
