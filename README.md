@@ -4,7 +4,7 @@ Welcome to the **Neural Networks Enhanced Lossless Text Compression** project! T
 
 ## Overview
 
-Our approach utilizes advanced neural network models to achieve efficient and effective text compression. For detailed instructions on real-time text file compression on your personal computer, refer to our [Wiki](https://github.com/username/repository/wiki).
+Our approach utilizes advanced neural network models to achieve efficient and effective text compression. For detailed instructions on real-time text file compression on your personal computer refer to the instructions below.
 
 ## Requirements
 
@@ -81,7 +81,7 @@ To perform knowledge distillation on GPT-2:
     python compress.py <--file_to_compress file_to_be_compressed_path>.txt <--checkpoint current_directory_path/knowledge_distillation_weights/checkpoint-XXXX>
     ```
 
-For further details, visit our [Wiki](https://github.com/username/repository/wiki).
+
 
 ---
 
