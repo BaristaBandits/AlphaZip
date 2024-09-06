@@ -53,10 +53,10 @@ To get started, ensure you have the following:
 
 To fine-tune the model:
 
-1. Run the `fine_tuning.py` script with your input file, e.g., `input.txt`.
+1. Run the `PEFT/fine_tuning.py` script with your input file, e.g., `input.txt`.
 
     ```bash
-    python fine_tuning.py <--input_file input>.txt
+    python PEFT/fine_tuning.py <--input_file input>.txt
     ```
 
 2. Test compression performance from any checkpoint using `compress.py`:
@@ -69,10 +69,10 @@ To fine-tune the model:
 
 To perform knowledge distillation on GPT-2:
 
-1. Run the `fine_tuning.py` script with your input file, e.g., `input.txt`.
+1. Run the `knowledge_distillation.py` script with your input file, e.g., `input.txt`.
 
     ```bash
-    python fine_tuning.py <--input_file input.txt>
+    python PEFT/knowledge_distillation.py <--input_file input.txt>
     ```
 
 2. Test compression performance from any checkpoint using `compress.py`:
