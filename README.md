@@ -69,7 +69,7 @@ To fine-tune the model:
 
 To perform knowledge distillation on GPT-2:
 
-1. Run the `knowledge_distillation.py` script with your input file, e.g., `input.txt`.
+1. Run the `PEFT/knowledge_distillation.py` script with your input file, e.g., `input.txt`.
 
     ```bash
     python PEFT/knowledge_distillation.py <--input_file input.txt>
