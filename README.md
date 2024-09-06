@@ -1,6 +1,6 @@
-# Neural Networks Enhanced Lossless Text Compression
+#AlphaZip
 
-Welcome to the **Neural Networks Enhanced Lossless Text Compression** project! This project explores leveraging the power of Large Language Models (LLMs) for compressing text in a lossless manner using rank-based prediction followed by compression techniques.
+Welcome to the **AlphaZip - Neural Networks Enhanced Lossless Text Compression** project! This project explores leveraging the power of Large Language Models (LLMs) for compressing text in a lossless manner using rank-based prediction followed by compression techniques.
 
 ## Overview
 
