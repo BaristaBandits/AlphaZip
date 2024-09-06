@@ -4,7 +4,7 @@ Welcome to the **Neural Networks Enhanced Lossless Text Compression** project! T
 
 ## Overview
 
-Our approach utilizes advanced neural network models to achieve efficient and effective text compression. For detailed instructions on real-time text file compression on your personal computer refer to the instructions below.
+Our approach utilizes advanced neural network models to achieve efficient and effective text compression. For  real-time text file compression on your personal computer refer to the instructions below.
 
 ## Requirements
 
