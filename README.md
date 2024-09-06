@@ -72,13 +72,13 @@ To perform knowledge distillation on GPT-2:
 1. Run the `fine_tuning.py` script with your input file, e.g., `input.txt`.
 
     ```bash
-    python fine_tuning.py --input_file input.txt
+    python fine_tuning.py <--input_file input.txt>
     ```
 
 2. Test compression performance from any checkpoint using `compress.py`:
 
     ```bash
-    python compress.py --file_to_compress <file_to_be_compressed_path>.txt --checkpoint <current_directory_path>/knowledge_distillation_weights/checkpoint-XXXX
+    python compress.py <--file_to_compress file_to_be_compressed_path>.txt <--checkpoint current_directory_path/knowledge_distillation_weights/checkpoint-XXXX>
     ```
 
 For further details, visit our [Wiki](https://github.com/username/repository/wiki).
