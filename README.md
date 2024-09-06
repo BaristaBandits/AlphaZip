@@ -1,39 +1,90 @@
-# AlphaZip: Neural-Networks-Enhanced-Lossless-Text-Compression
-Leveraging the power of Large Language Models in compressing text in a lossless fashion using a rank based prediction followed by compression.
+# Neural Networks Enhanced Lossless Text Compression
 
-Refer to the Wiki to know how you can compress text files in real-time in your personal Computer!
+Welcome to the **Neural Networks Enhanced Lossless Text Compression** project! This project explores leveraging the power of Large Language Models (LLMs) for compressing text in a lossless manner using rank-based prediction followed by compression techniques.
 
-Welcome to the Neural-Networks-Enhanced-Lossless-Text-Compression wiki!
+## Overview
 
-Requirements:
+Our approach utilizes advanced neural network models to achieve efficient and effective text compression. For detailed instructions on real-time text file compression on your personal computer, refer to our [Wiki](https://github.com/username/repository/wiki).
 
-NVIDIA GPU (GeForce RTX 4080)
+## Requirements
 
-Python 3.10.12
+To get started, ensure you have the following:
 
-Pytorch 2.2.2
+- **NVIDIA GPU**: GeForce RTX 4080
+- **Python**: 3.10.12
+- **PyTorch**: 2.2.2
+- **TensorFlow**: 2.11.0 (for XLA support)
 
-Tensorflow 2.11.0 (FOR XLA)
+## Installation
 
-Procedure:
+1. Clone the repository:
 
-Install the requirements using pip install -r requirements.txt
-Compress any text file you have by using the compress.py code
-Change the path variable to the required file's path
-For PDFs utilise the read_PDF function to first extract the text from PDF to a text file and then proceed to compress the text file as illustrated in the code
-For using the adaptive huffman method, you can copy paste the function or import the function as a user defined library
+    ```bash
+    git clone https://github.com/username/repository.git
+    cd repository
+    ```
 
-Information about Hyperparameters:
+2. Install the required dependencies:
 
-input_length: Refers to the number of ASCII characters from the input text that we would like to compress
-context_size: Refers to the number of characters that is used as a context for the transformer block to predict the next next token
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Domain Specific Compression:
+## Usage
 
-**Fine-tuning: **To fine tune the model you can use the fine_tuning.py code and insert a input file as 'input.txt' . You can test the compression performance from any checkpoint by using the compress.py code. Modify the code as follows.
+1. **Compressing Text Files**:
+    - Use the `compress.py` script to compress any text file.
+    - Modify the `path` variable in the script to point to your file.
 
-extensive_test('<file_to_be_compressed_path>.txt', '<current_directory_path>/fine_tuning_weights/checkpoint-XXXX')
+2. **PDF Files**:
+    - Utilize the `read_PDF` function to extract text from a PDF.
+    - Save the extracted text to a file and then compress it using the `compress.py` script.
 
-**Knowldge Distillation: **To knowledge distil gpt2 you can use the fine_tuning.py code and insert a input file as 'input.txt' . You can test the compression performance from any checkpoint by using the compress.py code. Modify the code as follows.
+3. **Adaptive Huffman Method**:
+    - To use the adaptive Huffman method, either copy and paste the function or import it as a user-defined library.
 
-extensive_test('<file_to_be_compressed_path>.txt', '<current_directory_path>/Knowledgdistillation_weights/checkpoint-XXXX')
+## Hyperparameters
+
+- **`input_length`**: Number of ASCII characters from the input text to compress.
+- **`context_size`**: Number of characters used as context for the transformer block to predict the next token.
+
+## Domain-Specific Compression
+
+### Fine-Tuning
+
+To fine-tune the model:
+
+1. Run the `fine_tuning.py` script with your input file, e.g., `input.txt`.
+
+    ```bash
+    python fine_tuning.py --input_file input.txt
+    ```
+
+2. Test compression performance from any checkpoint using `compress.py`:
+
+    ```bash
+    python compress.py --file_to_compress <file_to_be_compressed_path>.txt --checkpoint <current_directory_path>/fine_tuning_weights/checkpoint-XXXX
+    ```
+
+### Knowledge Distillation
+
+To perform knowledge distillation on GPT-2:
+
+1. Run the `fine_tuning.py` script with your input file, e.g., `input.txt`.
+
+    ```bash
+    python fine_tuning.py --input_file input.txt
+    ```
+
+2. Test compression performance from any checkpoint using `compress.py`:
+
+    ```bash
+    python compress.py --file_to_compress <file_to_be_compressed_path>.txt --checkpoint <current_directory_path>/knowledge_distillation_weights/checkpoint-XXXX
+    ```
+
+For further details, visit our [Wiki](https://github.com/username/repository/wiki).
+
+---
+
+Feel free to modify any paths or links to fit your specific repository details. This `README.md` file provides a clear and organized overview of your project, making it easier for users to get started and understand how to use the code.
+
