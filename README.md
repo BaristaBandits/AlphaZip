@@ -53,6 +53,11 @@ To get started, ensure you have the following:
 
 To fine-tune the model:
 
+Create a directory inside your current directory using
+```bash
+    mkdir fine_tuning_weights
+    ```
+
 1. Run the `PEFT/fine_tuning.py` script with your input file, e.g., `input.txt`.
 
     ```bash
@@ -69,6 +74,11 @@ To fine-tune the model:
 ### Knowledge Distillation
 
 To perform knowledge distillation on GPT-2:
+
+Create a directory inside your current directory using
+```bash
+    mkdir knowledge_distillation_weights
+    ```
 
 1. Run the `PEFT/knowledge_distillation.py` script with your input file, e.g., `input.txt`.
 
