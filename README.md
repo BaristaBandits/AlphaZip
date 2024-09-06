@@ -56,14 +56,15 @@ To fine-tune the model:
 1. Run the `PEFT/fine_tuning.py` script with your input file, e.g., `input.txt`.
 
     ```bash
-    python PEFT/fine_tuning.py <--input_file input>.txt
+    python PEFT/fine_tuning.py <input.txt>
     ```
 
 2. Test compression performance from any checkpoint using `compress.py`:
 
     ```bash
-    python compress.py <--file_to_compress file_to_be_compressed_path>.txt <--checkpoint current_directory_path/fine_tuning_weights/checkpoint-XXXX>
+    python compress.py <file_to_be_compressed_path> <current_directory_path/fine_tuning_weights/checkpoint-XXXX>
     ```
+   Replace XXXX with the checkpoint you would like to load.
 
 ### Knowledge Distillation
 
@@ -72,14 +73,15 @@ To perform knowledge distillation on GPT-2:
 1. Run the `PEFT/knowledge_distillation.py` script with your input file, e.g., `input.txt`.
 
     ```bash
-    python PEFT/knowledge_distillation.py <--input_file input.txt>
+    python PEFT/knowledge_distillation.py <input.txt>
     ```
 
 2. Test compression performance from any checkpoint using `compress.py`:
 
     ```bash
-    python compress.py <--file_to_compress file_to_be_compressed_path>.txt <--checkpoint current_directory_path/knowledge_distillation_weights/checkpoint-XXXX>
+    python compress.py <file_to_be_compressed_path> <current_directory_path/knowledge_distillation_weights/checkpoint-XXXX>
     ```
+Replace XXXX with the checkpoint you would like to load.
 
 
 
