@@ -112,7 +112,7 @@ def extensive_test(filename, model_path):
     only_brotli = brotli.compress(test[context_size:].encode("utf-8"), quality=11)
     only_brotli_size = sys.getsizeof(only_brotli)
 
-    separator = "." * 62
+    separator = "." * 50
     title = "." * 20 + " STATISTICS " + "." * 20
 
     print(f"\n{title}")
