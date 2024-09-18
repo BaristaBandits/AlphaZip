@@ -8,3 +8,5 @@ To download the gutenberg corpora use this link https://drive.google.com/file/d/
 
 
 2. French and Hindi texts were extracted from the OPUS - Corpora https://opus.nlpl.eu/
+
+3. Tiny Shakespeare dataset was extracted from : https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
