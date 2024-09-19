@@ -54,7 +54,7 @@ def run_test(model, tokenizer, test, context):  # Test: input text, sequence:con
         inputs = tokenizer(
             f"{context}", return_tensors="tf"
         )  # Context window moved forward
-        context += tokenizer.decode(right_id)
+        context += tokenizer.decode(right_token)
         context = context[-context_size:]
 
     # print(output_string)                                         #uncomment to view the actual ranks
