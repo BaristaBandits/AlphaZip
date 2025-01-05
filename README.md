@@ -99,5 +99,4 @@ Replace XXXX with the checkpoint you would like to load.
 
 ---
 
-Feel free to modify any paths or links to fit your specific repository details. This `README.md` file provides a clear and organized overview of your project, making it easier for users to get started and understand how to use the code.
-
+Feel free to modify any paths or links to fit your specific repository details. This `README.md` file provides a clear and organized overview of the project. 
