@@ -22,7 +22,7 @@ To get started, ensure you have the following:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Swathi-Shree-Narashiman/AlphaZip.git
+    git clone https://github.com/BaristaBandits/AlphaZip.git
     ```
 
 2. Install the required dependencies:
